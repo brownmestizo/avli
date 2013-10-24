@@ -7,6 +7,18 @@
 
 /* TOP - Horizontal Navigation */
 
+.header {
+	padding-top: 30px;
+}
+
+.header .input-lg {
+	border-radius: 6px 0 0 6px;
+}
+
+.header .btn-homepage-search {
+	border-radius: 0 6px 6px 0;
+}
+
 .navbar-inverse {
 	background: none;
 	background-color: #FFF;
@@ -61,15 +73,42 @@
 
 
 /* BOTTOM - Footer */
-
 .footer {
+	background: #005d9a;
+	border-top: 10px solid #0090d6;
+	padding-bottom: 20px;
+}
 
+.footer ul{
+	padding: 0;
+	list-style: none;
+}
+
+.footer ul li {
+	font-size: .9em;
+}
+
+.footer ul li, .footer p, .footer h4 {
+	color: #FFF;
 }
 
 
+.footer h4 {
+	color: #bfe3f9;
+}
 
+.footer-col {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 
+.footer-subscribe {
+	background: #0092d5;
+}
 
-
-
-
+.footer-subscribe-form {
+	background: #FFF;
+	padding: 10px;
+	border-radius: 6px;
+	margin-bottom: 1em;
+}
