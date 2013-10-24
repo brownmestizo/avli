@@ -1,0 +1,75 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* TOP - Horizontal Navigation */
+
+.navbar-inverse {
+	background: none;
+	background-color: #FFF;
+	border: none;
+	min-height: 100px;
+	margin-bottom: 0px;  
+}
+
+.navbar-fixed-top {
+	position: relative;
+}
+
+.navbar-inverse .navbar-nav > li,
+.navbar-inverse .navbar-nav > .active > a {
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#0195d3), to(#008fcb));
+	background-image: -webkit-linear-gradient(top, #0195d3 0%, #008fcb 100%);
+	background-image: -moz-linear-gradient(top, #0195d3 0%, #008fcb 100%);
+	background-image: linear-gradient(to bottom, #0195d3 0%, #008fcb 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0195d3', endColorstr='#008fcb', GradientType=0);
+	-webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25); 
+	box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25);
+	border-radius: 6px 6px 0 0;
+}
+
+.navbar-inverse .navbar-nav > li:hover {
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#008fcb), to(#0195d3));
+	background-image: -webkit-linear-gradient(top, #008fcb 0%, #0195d3 100%);
+	background-image: -moz-linear-gradient(top, #008fcb 0%, #0195d3 100%);
+	background-image: linear-gradient(to bottom, #008fcb 0%, #0195d3 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008fcb', endColorstr='#0195d3', GradientType=0);
+	-webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25); 	
+}
+
+.navbar-inverse .navbar-nav > li {
+	border-radius: 6px 6px 0 0;	
+	margin-right: 2px;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	color: #FFF;
+}
+
+.navbar-collapse {
+	padding: 0px;
+}
+
+
+
+
+/* BOTTOM - Footer */
+
+.footer {
+
+}
+
+
+
+
+
+
+
+
