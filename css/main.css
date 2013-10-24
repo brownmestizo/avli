@@ -70,6 +70,19 @@
 }
 
 
+/* MIDDLE - Secondary Row */
+.homepage-secondary h3 {
+	color:#e99906;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.homepage-secondary .well, .homepage-secondary .panel-body {
+	padding: 5px 19px 19px 19px;
+	margin-bottom:0;
+}
+
+
 
 
 /* BOTTOM - Footer */
