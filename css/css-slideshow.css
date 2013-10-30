@@ -1,0 +1,124 @@
+.slideshow img {
+  border: none;
+}
+
+
+/*-- Main Image Preview --*/
+.slideshow .main_image {
+  width: auto; 
+  float: left;
+  background: #333;
+  position: relative;
+  overflow: hidden;
+  color: #FFF;
+}
+
+.slideshow .main_image h2 {
+  font-size: 2em;
+  font-weight: normal;
+  color: #FFF;
+}
+
+.slideshow .main_image p {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6em;
+}
+
+.slideshow .main_image .block {
+  padding: 2em;
+}
+
+.slideshow .main_image .block small { 
+  padding: 0 0 0 20px; 
+  background: url(http://dhanugupta.com/jquery/icon_calendar.gif) no-repeat 0 center; 
+  font-size: 1em; 
+}
+
+.slideshow .main_image .block small {
+  margin-left: 10px;
+}
+
+.slideshow .main_image .desc{
+  position: absolute;
+  bottom: 0;  left: 0;
+  width: 100%;
+  display: none;
+}
+
+.slideshow .main_image .block{
+  width: 100%;
+  background: #111;
+  border-top: 1px solid #000;
+}
+
+.slideshow .main_image a.collapse {
+  background: url(http://dhanugupta.com/jquery/btn_collapse.gif) no-repeat left top;
+  height: 27px; width: 93px;
+  text-indent: -99999px;
+  position: absolute; 
+  top: -27px; right: 20px; 
+}
+
+.slideshow .main_image a.show {
+  background-position: left bottom;
+}
+
+
+
+/*-- Navigation --*/
+
+.slideshow .image_thumb {
+  float: left;
+  width: 400px;
+  background: #efefef;
+}
+
+.slideshow .image_thumb img {
+  background: #fff; 
+  float: left;
+  display: none;
+}
+
+.slideshow .image_thumb ul {
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+}
+
+.slideshow .image_thumb ul li{
+  margin: 2px; /*padding: 12px 10px;*/
+  background: #fff url(http://dhanugupta.com/jquery/nav_a.gif) repeat-x;
+  width: 400px;
+  float: left;
+  padding: 1px 0 0px 20px;
+}
+
+.slideshow .image_thumb ul li.hover {
+  /*background: #ddd;*/
+  background:url('http://dhanugupta.com/jquery/images/selected-item.gif') top left no-repeat;
+  cursor: pointer;
+}
+
+.slideshow .image_thumb ul li.active {
+  /*background: #fff;*/
+  background:url('http://dhanugupta.com/jquery/images/selected-item.gif') top left no-repeat;
+  cursor: default;
+}
+
+.slideshow .image_thumb ul li h2 {
+  font-size: 1.6em; 
+  margin: 0; 
+  padding: 0;
+}
+
+.slideshow .image_thumb ul li .block {
+  float: left; 
+  margin-left: 10px;
+  padding: .5em 0 .5em 0;  
+} 
+
+.slideshow .block a { 
+  color:#000;
+} 

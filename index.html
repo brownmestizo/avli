@@ -13,25 +13,76 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/css-slideshow.css">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>      
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->    
-    <div class="navbar navbar-inverse navbar-fixed-top header">
-      <div class="container">
+
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->    
+
+    <script type="text/javascript" src="js/js-slideshow.js"></script>        
+    <script type="text/javascript">
+
+    var refreshIntervalId = 0;
+    $(function() {
+        var $activehover = $('.image_thumb ul li.hover'); 
+        if ($activehover.length == 0) {
+          // setInterval( "slideSwitch()", 5000 );
+          refreshIntervalId = setInterval("slideSwitch()", 4000);
+          /* later */
+          //clearInterval(refreshIntervalId);
+        } 
+    });
+
+    </script>
+    <script type="text/javascript" src="js/js-slideshow-core.js"></script>        
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="container header">
           <div class="row">
-            <div class="col-lg-6">
-              Logo here
+            <div class="header-logo pull-left">
+              <a href="#"><img src="img/avli-logo.png" class="img-responsive"></a>
             </div>
-            <div class="col-lg-2">Enquire Now</div>
-            <div class="col-lg-2">1300 429 136</div>
-            <div class="col-lg-2">Social Media</div>
+            
+            <div class="pull-right">
+              <div class="header-enquire">
+                <div class="col-xs-10">                
+                  <h5>Enquire Now</h5>
+                </div>
+                <div class="col-xs-2">
+                  <span class="glyphicon glyphicon-comment"></span>
+                </div>
+              </div>
+
+              <div class="header-contactnumber">
+                <div class="col-xs-10">
+                  <h5>1300 429 136</h5>
+                  <h6><a href="#">View Operating Hours</a></h6>
+                </div>
+                <div class="col-xs-2">
+                  <span class="glyphicon glyphicon-earphone"></span>
+                </div>
+              </div>
+              
+              <div class="header-socialmedia set-1">
+                <ul>
+                  <li><a href="#" class="twitter-small">Twitter</a></li>
+                  <li><a href="#" class="facebook-small">Facebook</a></li>
+                  <li><a href="#" class="gplus-small">GPlus</a></li>
+                  <li><a href="#" class="rss-small">RSS</a></li>
+                  <li><a href="#" class="linkedin-small">Linkedin</a></li>
+                </ul>              
+              </div>
+            </div>
 
           </div>
       </div>
+
       <div class="container">
           <form class="form-horizontal" role="form">
             <div class="col-xs-10 col-md-9 col-lg-11"> 
@@ -78,23 +129,67 @@
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
+
     </div>
     
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h2>Get a free iPad upon enrolling under VET FEE-HELP!</h2>
-        <p>This is a placeholder for the homepage slideshow.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-      </div>
+    
+    <div class="container slideshow">
+
+        <div class="image_thumb">
+          <ul>
+            <li>
+              <a href="http://www.coursesforsuccess.com.au/files/banners/44-4901ca60253f341296319a5327eb637c.jpg"><img src="http://www.coursesforsuccess.com.au/files/banners/44-4901ca60253f341296319a5327eb637c.jpg" alt="Ajaxian" /></a>
+              <div class="block">
+                <a href="http:/ajaxian.com/"><h2>October Sale!</h2></a>                
+                <p>Save up to 62% off course fees this month!</p>
+              </div>
+            </li>
+            <li>
+              <a href="http://www.coursesforsuccess.com.au/files/banners/55-aa0e78a1293500c0d7b8395620dfc1c2.jpg"><img src="http://www.coursesforsuccess.com.au/files/banners/55-aa0e78a1293500c0d7b8395620dfc1c2.jpg" alt="Tech crunch" /></a>
+              <div class="block">
+                <a href="http://techcrunch.com"><h2>Why choose Us?</h2></a>
+                <p>Because we are much better?</p>
+              </div>
+            </li>
+            <li>
+              <a href="http://www.coursesforsuccess.com.au/files/banners/29-49351242a6c211c8c2aecd33dbd690ce.jpg"><img src="http://www.coursesforsuccess.com.au/files/banners/29-49351242a6c211c8c2aecd33dbd690ce.jpg" alt="Facebook" /></a>
+              <div class="block">
+                <a href="http://facebook.com"><h2>It's your course, do it your way!</h2></a>                
+                <p>I love that I can study whenever &amp; wherever I like!</p>                
+              </div>
+            </li>
+            <li>
+              <a href="http://www.coursesforsuccess.com.au/files/banners/36-747f97f6472ebf5efda1a22401f9b020.jpg"><img src="http://www.coursesforsuccess.com.au/files/banners/36-747f97f6472ebf5efda1a22401f9b020.jpg" alt="Twitter" /></a>
+              <div class="block">
+                <a href="http://twitter.com"><h2>Find the job you want!</h2></a>
+                <p>An affordable way to get the skills you want!</p>
+              </div>
+            </li>
+          </ul>
+        </div>      
+
+        <div class="main_image">
+          <img src="http://www.coursesforsuccess.com.au/files/banners/37-341653f730727c607f514dc774677f19.jpg" alt="- banner1" />
+          <div class="desc">
+            <a href="#" class="collapse">Close Me!</a>
+            
+            <div class="block">
+              <h2>Find the job you want! </h2>              
+              <p>Courses For Success helped me land my dream job!</p>
+            </div>
+
+          </div>
+        </div>
+
     </div>
 
+    <!-- Secondary Row -->
     <div class="container">
       <!-- Example row of columns -->
       <div class="row homepage-secondary">
 
-        <div class="col-lg-3">          
+        <div class="col-md-3 col-lg-3">          
           <div class="">
             <div class="well">
               <h3>Key Dates</h3>
@@ -106,7 +201,7 @@
           </div>      
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-md-3 col-lg-3">
           <div class="">
             <div class="well">          
               <h3>VET FEE-HELP</h3>
@@ -121,7 +216,7 @@
 
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-md-6 col-lg-6">
           <div class="panel panel-default">
             <div class="panel-body">          
               <h3>Find out your eligibility in less than a minute!</h3>
@@ -142,30 +237,59 @@
             </div>
           </div>  
         </div>
-
-
       </div>
+
+      <!-- end of homepage-secondary -->
 
       <hr>
 
-      <div class="container">
+      <div class="container homepage-secondary-courses">
+        <div class="xs-12">
+          <h3>Browse courses & units by area of study</h3>
+        </div>
         <!-- Example row of columns -->
         <div class="row">
-          <div class="col-md-4">
-            <h3>Training & Assessment</h3>
-            <p>Certificate IV in Training and Assessment</p>
+          
+          <div class="col-xs-6 col-md-4 hp-course">
+            <h3>Training & Assessment</h3>            
+            <div class="col-xs-5"></div>            
+            <div class="col-xs-7 hp-course-info">
+                <p class="hp-course-name">Certificate IV in Training and Assessment</p>
+                <p class="hp-course-code">TAE40110</p>
+                <p class="hp-course-price">$1950</p>
+                <p class="hp-course-save">Save $1800</p>
+                <p class="hp-course-rrp">48% off - RRP $3750</p>
+            </div>
             <p><button type="button" class="btn btn-primary">Find out more ></button> <button type="button" class="btn btn-warning">Enrol now ></button></p>
           </div>
-          <div class="col-md-4">
-            <h3>Administration</h3>
-            <p>Certificate IV in Training and Assessment</p>
+
+          <div class="col-xs-6 col-md-4 hp-course">
+            <h3>Administration</h3>            
+            <div class="col-xs-5"></div>            
+            <div class="col-xs-7 hp-course-info">
+                <p class="hp-course-name">Certificate IV in Training and Assessment</p>
+                <p class="hp-course-code">TAE40110</p>
+                <p class="hp-course-price">$1950</p>
+                <p class="hp-course-save">Save $1800</p>
+                <p class="hp-course-rrp">48% off - RRP $3750</p>
+            </div>
             <p><button type="button" class="btn btn-primary">Find out more ></button> <button type="button" class="btn btn-warning">Enrol now ></button></p>
           </div>
-          <div class="col-md-4">
-            <h3>Human Resources</h3>
-            <p>Certificate IV in Training and Assessment</p>
+
+
+          <div class="col-xs-6 col-md-4 hp-course">
+            <h3>Human Resources</h3>            
+            <div class="col-xs-5"></div>            
+            <div class="col-xs-7 hp-course-info">
+                <p class="hp-course-name">Certificate IV in Training and Assessment</p>
+                <p class="hp-course-code">TAE40110</p>
+                <p class="hp-course-price">$1950</p>
+                <p class="hp-course-save">Save $1800</p>
+                <p class="hp-course-rrp">48% off - RRP $3750</p>
+            </div>
             <p><button type="button" class="btn btn-primary">Find out more ></button> <button type="button" class="btn btn-warning">Enrol now ></button></p>
-          </div>        
+          </div>
+
 
         </div>
       </div>
